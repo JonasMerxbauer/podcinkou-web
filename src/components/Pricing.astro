@@ -1,0 +1,50 @@
+---
+import PricingItem from "./PricingItem.astro";
+---
+
+<!-- Pricing Section -->
+<div id="pricing" class="invisible relative top-[-100px] h-0"><wbr /></div>
+<section
+  class="flex flex-col items-center gap-16 py-24 sm:px-12"
+  aria-labelledby="pricing-heading"
+>
+  <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Naše služby</h2>
+
+  <!-- Tiers -->
+  <div
+    class="mx-auto max-w-2xl space-y-12 px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:space-y-0 lg:px-8"
+  >
+    <PricingItem
+      title="Online trénování"
+      prefix="od"
+      price="1500 Kč"
+      per="měsíc"
+      points={[
+        "Týdenní sestavení tréninkového plánu",
+        "Nutriční plán/konzultace",
+        "Komunikace do 24h",
+        "Pravidelné konzultace v průběhu celé spolupráce",
+        "Úpravy dle přání klienta a jeho životného stylu",
+      ]}
+    />
+    <PricingItem
+      title="Osobní trénování"
+      prefix="od"
+      price="450 Kč"
+      per="hod"
+      subtitle="Osobní trénink v soukromém fitku"
+      badge="První trénink zdarma"
+    />
+    <PricingItem
+      title="Jídelníček na míru"
+      price="500 Kč"
+      per="měsíc"
+      points={[
+        "Nutriční plán",
+        "Komunikace do 24h",
+        "Pravidelné konzultace v průběhu celé spolupráce",
+        "Úpravy dle přání klienta a jeho životného stylu",
+      ]}
+    />
+  </div>
+</section>

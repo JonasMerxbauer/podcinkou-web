@@ -1,0 +1,22 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import About from "../components/About.astro";
+import Pricing from "../components/Pricing.astro";
+import Contact from "../components/Contact.astro";
+import ReviewsView from "../components/ReviewsView";
+import Nav from "../components/Nav";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Pod Činkou">
+  <main>
+    <Hero />
+    <About />
+    <Pricing />
+    <ReviewsView client:load />
+    <Contact />
+    <Footer />
+    <Nav client:load />
+  </main>
+</Layout>

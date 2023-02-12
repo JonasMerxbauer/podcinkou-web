@@ -1,0 +1,29 @@
+---
+import Form from "./Form";
+---
+
+<div id="contact" class="invisible relative top-[-100px] h-0"><wbr /></div>
+<section class="relative">
+  <div class="lg:absolute lg:inset-0">
+    <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+      <img
+        class="h-56 w-full object-cover lg:absolute lg:h-full"
+        src="/form.jpg"
+        alt=""
+      />
+    </div>
+  </div>
+  <div
+    class="relative py-16 px-6 sm:py-24 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:px-8 lg:py-32"
+  >
+    <div class="lg:pr-8">
+      <div class="mx-auto max-w-md sm:max-w-lg lg:mx-0">
+        <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
+          Napište nám
+        </h2>
+        <p class="mt-4 text-lg text-zinc-500 sm:mt-3"></p>
+        <Form client:load />
+      </div>
+    </div>
+  </div>
+</section>
