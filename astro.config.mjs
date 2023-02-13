@@ -22,6 +22,7 @@ export default defineConfig({
         blogPostList: "storyblok/BlogPostList",
         page: "storyblok/Page",
         author: "storyblok/Author",
+        category: "storyblok/Category",
       },
     }),
   ],
